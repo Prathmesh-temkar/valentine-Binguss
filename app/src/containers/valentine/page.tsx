@@ -24,7 +24,7 @@ const imgArr = [
   "/valentine/goa1.jpg",
   "/valentine/pose1.jpg",
   "/valentine/kiss1.jpg",
-  "/valentine/trad1.jpg",
+  "/valentine/tard1.jpg",
   "/valentine/snap1.jpg",
   "/valentine/teddy1.jpg",
 ];
@@ -91,18 +91,18 @@ export default function Valentine() {
       )}
       {stage === Stages.stageYes && (
         <>
-          <div className="flex items-center justify-center gap-2">
+          <div className="flex items-center justify-center gap-1">
             <Image
               src="/valentine/bear-kiss-bear-kisses.gif"
               alt="valentine kiss | valentine"
-              width={250}
-              height={250}
+              width={150}
+              height={150}
             />
             <Image
               src="/valentine/kiss3.jpg"
               alt="valentine kiss"
-              width={250}
-              height={250}
+              width={150}
+              height={150}
             />
           </div>
           <div className="text-center text-2xl mt-2 text-gray-900">
@@ -110,19 +110,6 @@ export default function Valentine() {
           </div>
         </>
       )}
-      {/* {stage === Stages.unhappy && (
-        <>
-          <Image
-            src="/valentine/unhappy-bear.gif"
-            alt="valentine kiss | valentine"
-            width={250}
-            height={250}
-          />
-          <div className="text-center text-2xl mt-2 text-gray-900">
-            {"OK! Bye..."}
-          </div>
-        </>
-      )} */}
     </section>
   );
 }
